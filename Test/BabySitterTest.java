@@ -41,4 +41,10 @@ public class BabySitterTest {
 
     }
 
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void startTimeBeforeFive(){
+        totalPay = babySitter.calculatePay(16, 4, 20);
+
+    }
+
 }

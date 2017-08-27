@@ -11,6 +11,11 @@ public class BabySitter {
         startTimeToBedTime = bedTime - startTime;
         bedTimeToMidnight = 24 - bedTime;
 
+        if (startTime < 17){
+            throw new IndexOutOfBoundsException("Can not start before 5pm");
+        }
+
+
         //when endTime is
         if (endTime > 1 && endTime <= 4) {
             midnightToEndTime = endTime;
