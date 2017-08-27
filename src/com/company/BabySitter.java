@@ -1,8 +1,8 @@
 package com.company;
 
-public class Main {
+public class BabySitter {
 
-    public static void main(String[] args) {
-	// write your code here
+    public int calculatePay(int startTime, int endTime, int bedTime){
+        return 0;
     }
 }
