@@ -15,8 +15,10 @@ public class BabySitter {
             throw new IndexOutOfBoundsException("Can not start before 5pm");
         }
 
+        if (endTime > 4 && endTime != 24){
+            throw new IndexOutOfBoundsException("End time can not be after 4am");
+        }
 
-        //when endTime is
         if (endTime > 1 && endTime <= 4) {
             midnightToEndTime = endTime;
         }
